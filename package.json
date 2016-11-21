@@ -39,6 +39,7 @@
     "classnames": "^2.2.5",
     "core-js": "^2.4.0",
     "normalize.css": "^4.2.0",
+    "postinstall-build": "^2.0.0",
     "react-css-themr": "^1.6.0"
   },
   "devDependencies": {
@@ -104,6 +105,7 @@
     "lint:scss": "sass-lint ./components/**/*.scss -v -i ./components/slider/style.scss",
     "lint:staged": "lint-staged",
     "patch": "bumped release patch",
+    "postinstall": "postinstall-build lib --script build",
     "prebuild": "npm run clean",
     "prepublish": "npm run build",
     "release": "bumped release",
